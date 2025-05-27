@@ -26,6 +26,7 @@ export default function Grid1() {
     const newGrid = grid.map((row, r) =>
       row.map((cell, c) => (r === rowIdx && c === colIdx ? cell + 1 : cell))
     );
+    console.log(newGrid);
     setGrid(newGrid);
   };
 
